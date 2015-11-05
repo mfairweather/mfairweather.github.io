@@ -1,1 +1,1 @@
-New site.
+New site built w/ Jekyll.
