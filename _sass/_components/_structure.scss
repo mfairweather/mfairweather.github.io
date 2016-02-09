@@ -1,9 +1,20 @@
 *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
+body {
+	-webkit-font-smoothing:antialiased;
+	text-rendering: optimizeLegibility !important;
+	font-family: $font-family-body;
+	font-size: $font-size-base;
+	color: $white;
+	background-color:$background-body;
+}
+
 .container{ 
-	max-width:1200px; 
 	margin:0 auto; 
-	padding:0 3em; 
+	padding:0 30px; 
+	min-height: 100vh;
+    display: flex;
+    border:3px solid $white;
 }
 
 .row{ 
@@ -14,7 +25,16 @@
 	
 	.inner{ 
 		margin: 0 3em; 
-		padding:3em 0; /*border-top:1px solid #eef4fb;*/ 
+		padding:0;
 	}
 
+}
+
+
+@media screen and (min-width: 480px) {
+
+	.container {
+		padding:0 60px;
+	}
+	
 }
